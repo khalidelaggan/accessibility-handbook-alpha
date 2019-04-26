@@ -1,0 +1,712 @@
+/*
+Main.css
+==================================
+Begin with generic 'mobile first' styles
+*/
+
+/*
+Normalize the box model
+==================================
+*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+ }
+
+/*
+global styles
+==================================
+*/
+
+html, body {
+    height: 100%;
+}
+
+/*
+Typography
+==================================
+*/
+
+body {
+    font-family: "Avenir Next", Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.466666667;
+}
+
+h3{
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 1em;
+    margin-bottom: 0.4em;
+    border-top: 0.2em solid #d7d7d7;
+    margin-top: 1em;
+    color: #3e3e3e;
+}
+
+h1,
+h3,
+h4,
+h5,
+strong {
+    font-family: "Avenir Next Demi", "Avenir Next", Arial, sans-serif;
+    font-weight: 600;
+}
+
+.site-title {
+    font-size: 1.625em;
+    font-family: "Avenir Next", Arial, sans-serif;
+    font-weight: normal;
+    color: #919395;
+    margin-left: 18%;
+    line-height: 1.2941176470588236;
+    display: inline-block;
+    width: 50%;
+}
+
+h2 {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.375em;
+    margin: 1.4em 0 0 0;
+}
+
+h4 {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.page-title {
+    margin-top: .727272727em; /* 16/22 */
+}
+
+.float-right {
+    display: inline-block;
+    width: 25%;
+    margin: 0;
+    text-align: right;
+}
+
+.float-right  a.toggle {
+    color:#fff;
+    border-bottom:none;
+}
+
+.site_title a.title-link{
+    color:#fff;
+    border-bottom:none;
+}
+
+.float-right  a.toggle:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*
+Lists
+--------------------------------
+*/
+
+.main-content ul {
+    padding-left: 1.1em;
+}
+
+.main-content li {
+    margin-bottom: 1em;
+}
+
+li h3,
+li h4 {
+    margin: 0;
+}
+
+li p {
+    margin-top: 0;
+}
+
+/*
+Links
+==================================
+*/
+
+a {
+    -webkit-transition: .2s;
+       -moz-transition: .2s;
+            transition: .2s;
+}
+
+a,
+a:link {
+    color: #0072ce;
+    text-decoration: underline;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #202021;
+}
+
+a:visited{
+    text-decoration: underline;
+    color: #3b3b9a;
+}
+
+
+a:active {
+    border-bottom: 1px solid #002d72;
+    color: #002d72;
+    text-decoration: none;
+}
+
+
+a.title-link {
+    color: #fff;
+    border-bottom: none;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    line-height: 1.125em;
+    font-family: source sans pro, arial, sans;
+    font-weight: 600;
+    padding-bottom: 0.33em;
+    display: block;
+    letter-spacing: -0.03em;
+    text-shadow: rgba(0,99,173,0.5) 2px 2px 0;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+    left: -0.05em
+}
+
+a.title-link:hover,
+a.title-link:active,
+a.title-link:focus {
+    color: #fff;
+    border-bottom: none;
+}
+
+a.skip-link {
+    color: #0072ce;
+    border-bottom: none;
+    padding: .25em;
+}
+
+a.skip-link:hover,
+a.skip-link:active,
+a.skip-link:focus {
+    background-color: #0072ce;
+    color: #fff;
+    border-bottom: none;
+}
+
+
+/*
+Navigation
+==================================
+*/
+
+.sidebar-nav a {
+  display: block;
+  padding: 10px;
+  -webkit-transition: unset;
+  transition: unset;
+}
+.sidebar-nav a,
+.sidebar-nav a:link,
+.sidebar-nav a:visited {
+  border-bottom: none;
+  color: #75787b;
+}
+.sidebar-nav li:hover,
+.sidebar-nav a:focus,
+.sidebar-nav li:active,
+.sidebar-nav .sidebar-nav-active {
+  color: #75787b;
+  border-left: 4px solid #000;
+  background-color: transparent;
+  border-bottom: 1px solid #babbbd;
+}
+.sidebar-nav li:hover,
+.sidebar-nav li:active,
+.sidebar-nav .sidebar-nav-active {
+  padding-left: 0;
+}
+.sidebar-nav a:focus {
+  padding-left: 6px;
+}
+.sidebar-nav li:hover a:focus,
+.sidebar-nav li:active a:focus {
+  border-left: none;
+  padding-left: 10px;
+}
+.sidebar-nav ul {
+  margin: 0;
+  padding: 0;
+  /*border-top: 1px solid @gray-50;*/
+}
+.sidebar-nav li {
+  list-style: none;
+  border-bottom: 1px solid #babbbd;
+  font-size: 1.125em;
+  padding-left: 4px;
+}
+.sidebar-nav li:last-child {
+  border-bottom: none;
+}
+
+
+/*
+Layout
+==================================
+*/
+
+.logo {
+    display: block;
+}
+
+.content {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.heading-label{
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 1em;
+    margin-bottom: 0.4em;
+    margin-top: 1em;
+    color: #292828;
+}
+
+/* offset the fixed position header for jump links */
+section:before {
+    display: block;
+    content: "";
+    height: 60px;
+    margin: -60px 0 0;
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header {
+    width: 100%;
+    background-color: #000;
+    padding: 3em 0;
+}
+
+/* @group .site-footer */
+
+.site-footer{
+	border-top: 1px solid #d8d8d8;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	color: #555;
+	background: #f8f8f8;
+}
+
+.site-footer nav::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.site-footer span a:hover{ color: #111; }
+.site-footer span a:hover img{ opacity: 0.85;}
+.site-footer span img{
+	opacity: 0.64;
+	border-radius: 0.1em;
+	width: 1.6em;
+	height: 1.6em;
+	margin-top: -0.2em;
+	margin-right: 0.2em;
+	margin-left: 0.2em;
+	display: inline-block;
+	vertical-align: middle;
+
+}
+
+.site-footer a{ text-decoration: none; }
+
+.site-footer .button{
+  border: 1px solid #d3d3d3;
+  border-bottom-color: #ccc;
+  border-radius: 2px;
+  background: #f8f8f8;
+  background: linear-gradient(#fff, #eee);
+  font: inherit;
+  font-size: 16px;
+  color: #333;
+  text-shadow: 0 1px 0 #fff;
+  padding: 4px 12px 6px;
+  -webkit-box-shadow: 0 1px 0 #eee;
+  float: left;
+  line-height: 1.33em;
+  margin-bottom: 0.8em;
+  margin-right: 1em;
+  white-space: nowrap;
+  cursor: default;
+
+}
+
+.site-footer .button.button-edit{
+	margin-right: -1px;
+	border-radius: 2px 0 0 2px;
+	border-right: none;
+	position: relative;
+	clear: left;
+}
+
+.site-footer .button.button-edit::after{
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 1px;
+	bottom: 1px;
+	background: #ddd;
+	width: 1px;
+	-webkit-box-shadow: 1px 0 0 rgba(255,255,255,0.7);
+
+}
+
+.site-footer .button.button-issue{
+	border-radius: 0 2px 2px 0;
+	border-left-color: #e8e8e8;
+	margin-right: 0;
+}
+
+.site-footer .button:hover{
+	background: linear-gradient(#fff, #e3e3e3);
+	border-color: #c3c3c3;
+	border-bottom-color: #b8b8b8;
+	text-decoration: none;
+}
+
+.site-footer .button:active{
+	color: #888;
+	background: linear-gradient(#e3e3e3, #eee);
+	border-color: #bbb;
+	border-top-color: #aaa;
+	border-bottom-color: #b3b3b3;
+	text-shadow: none;
+	-webkit-box-shadow: inset 1px 1px 0 #ddd;
+	  -webkit-touch-callout: none; /* iOS Safari */
+	  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+	  -khtml-user-select: none;    /* Konqueror */
+	  -moz-user-select: none;      /* Firefox */
+	  -ms-user-select: none;       /* IE/Edge */
+	  user-select: none;
+}
+
+
+
+@media screen and (min-width: 486.66px){
+
+	.site-footer .button{ float: left; }
+	.site-footer .button.button-edit{
+		margin-right: -0.4em;
+		clear: none;
+	}
+
+}
+
+@media screen and (min-width: 817.77px){
+
+	.site-footer{ text-align: right; padding-top: 1.6em;}
+	.site-footer .button{ float: none; }
+	.site-footer .button.button-edit{ margin-right: -0.4em;}
+}
+
+
+/* @end */
+
+
+/*
+Footer
+==================================
+*/
+
+/* for sticky footer */
+.container {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    display: table-row; /* for sticky footer */
+    height: 1px; /* for sticky footer */
+    border-top: 2px solid #babbbd;
+    background: #f1f2f2;
+    width: 100%;
+    font-size: 0.875em;
+}
+
+footer .wrap {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+
+/*
+Helpers
+==================================
+*/
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+    visibility: hidden;
+}
+
+
+/*
+Style
+==================================
+*/
+
+.intro {
+    color: #75787B;
+}
+
+li h4 {
+    margin: 0;
+}
+
+.license {
+    font-family: "Avenir Next Demi", Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+pre {
+    max-width: 100%;
+    font-size: 0.875em;
+    overflow-y: scroll;
+    background-color: #f1f2f2;
+    padding: 10px;
+}
+
+/*
+Post list
+----------------------------------
+*/
+
+ul.posts {
+    padding: 0;
+}
+
+.posts li {
+    list-style: none;
+}
+
+.post-date {
+    color: #75787B;
+}
+
+/*
+Repo list
+----------------------------------
+*/
+
+ul.repo-list {
+    margin: .5em 0 1em 0;
+    padding: 0;
+}
+
+.repo-list li {
+    list-style: none;
+}
+
+.repo-list p {
+    margin: 0;
+    font-size: 0.875em;
+}
+
+.repo-list h4 {
+    text-transform: none;
+}
+
+/*
+Helper Classes
+==================================
+*/
+
+/*
+Clearfix list
+----------------------------------
+*/
+
+.group:before,
+.group:after {
+    content: " ";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    *zoom: 1;
+}
+
+/*
+Desktop Styles
+==================================
+*/
+
+@media screen and (min-width: 45em) and (min-height: 32.5em) {
+
+    /*
+    Typography
+    ==============================
+    */
+
+    /*
+    Layout
+    ==============================
+    */
+
+    .logo {
+        max-width: 30%;
+        padding-right: 20px;
+        float: right;
+    }
+
+    aside {
+        width: 30%;
+        float: left;
+    }
+
+    .main-content {
+        width: 64%;
+        float: left;
+        margin-bottom: 120px;
+        margin-left: 18%;
+    }
+
+    /*
+    Navigation
+    ==============================
+    */
+
+
+    /*
+    Style
+    ==============================
+    */
+
+    /*
+    Repo list
+    ------------------------------
+    */
+
+    .repo-list li {
+        list-style: none;
+        display: block;
+        float: left;
+        height: 4.0625em;
+        max-height: 4.0625em;
+        background-color: #E7E7E6;
+        border-left: 1px solid #BABBBD;
+        width: 30%;
+    }
+
+    .repo-list a:link,
+    .repo-list a:visited {
+        display: block;
+        max-height: 4.0625em;
+        background-color: #E7E7E6;
+        border-bottom: none;
+        padding: .625em 1em 1em 1em;
+    }
+
+    .repo-list a:hover {
+        color: #4D5F87;
+        background-color: #CDE3F1;
+    }
+
+    .repo-list li:first-child {
+        text-align: center;
+        border-left: none;
+        line-height: 60px;
+        padding: .625em 1em;
+        width: 10%;
+    }
+
+}
+
+@media screen and (max-width: 54.375em) and (min-height: 32.5em) {
+
+    /* keep the repo list containers the same height, but account for the need for more height */
+
+    .repo-list li {
+        height: 6em;
+        max-height: 6em;
+    }
+
+    .repo-list a:link,
+    .repo-list a:visited {
+        max-height: 6em;
+    }
+}
+
+/*
+Mobile Styles
+==================================
+*/
+
+@media screen and (max-width: 40.5em) {
+
+    .main-content {
+        margin-top: 1.5em;
+    }
+
+    .site-title {
+        font-size: 1.4em;
+        margin-left: 2%;
+        color: #fff;
+        line-height: 1.2941176470588236;
+        display: inline-block;
+        width: 72%;
+    }
+
+}

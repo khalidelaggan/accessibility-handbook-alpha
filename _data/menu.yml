@@ -1,0 +1,20 @@
+en:
+  home:
+    name: "Home"
+    url: "/home/"
+  guide:
+    name: "Guide"
+    url: "/guide/"
+  commitment:
+    name: "Commitment"
+    url: "/commitment"
+  resources:
+    name: "Resources"
+    url: "/resources"
+fr:
+  home:
+    name: "Accueil"
+    url: "/accueil/"
+  contact:
+    name: "Coordonnées"
+    url: "/coordonnees/"
